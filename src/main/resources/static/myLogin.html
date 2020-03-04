@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登錄</title>
+	<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+	<style>
+		<!-- some style -->
+	</style>
+</head>
+<body>
+	<div class=login>
+		<h2>Demo Form</h2>
+		<div class="login-top">
+			<h1>LOGIN FORM</h1>
+			<form action="/auth/form" method="post">
+				<input type="text" name="username" placeholder="username"/>
+				<input type="password" name="password" placeholder="password"/>
+				<!-- 圖形驗證碼 -->
+				<input type="text" name="captcha" placeholder="captcha"/>
+				<img src="/captcha.jpg" alt="captcha" height="50px" width="150px" style="margin-left: 20px;"/>
+				<!-- 忘記密碼 -->
+				<div class="forgot">
+					<a href="#">forgot password</a>
+					<input type="submit" value="Login"/>
+				</div>
+			</form>
+		</div>
+		<div class="login-button">
+			<h3>New User &nbsp;<a href="#">Register</a>&nbsp; Here</h3>
+		</div>
+	</div>
+</body>
+</html>
